@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+  </head>
+  <body class="bg-dark">
+    <div
+      class="position-fixed top-0 start-0 end-0 w-100 bottom-0 d-flex justify-content-center align-items-center load"
+    >
+      <div class="loader"></div>
+    </div>
+    <main>
+      <!-- &============== side nav-bar ==================-->
+      <aside class="position-fixed z-3 top-0 bottom-0 d-flex">
+        <div
+          class="bg-black vh-100 nav-items d-flex justify-content-between flex-column p-3"
+        >
+          <ul class="list-unstyled list">
+            <li class="py-3 position-relative" id="search-nav">Search</li>
+            <li class="py-3 position-relative" id="categories-nav">
+              Categories
+            </li>
+            <li class="py-3 position-relative" id="area-nav">Area</li>
+            <li class="py-3 position-relative" id="ingredents-nav">
+              Ingredents
+            </li>
+            <li class="py-3 position-relative" id="contact-nav">Contact Us</li>
+          </ul>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+        <div
+          class="bg-white px-2 py-3 d-flex justify-content-between align-items-center flex-column test"
+        >
+          <img class="w-100" src="./logo.png" alt="" />
+          <i class="fa-solid fa-bars fa-2x d-block open-menu"></i>
+          <i class="fa-solid fa-x fa-2x d-none close-menu"></i>
+          <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </aside>
+      <!-- & =============== search section ===========-->
+      <section id="Search">
+        <div class="container py-4">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input
+                class="form-control bg-dark text-white"
+                type="text"
+                id="nameSearch"
+                placeholder="Search By Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                class="form-control bg-dark text-white"
+                type="text"
+                id="firstLetterSearch"
+                maxlength="1"
+                placeholder="Search By First Letter"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- &================= main section ===================-->
+      <section id="main" class="position-relative">
+        <div class="container py-4">
+          <div
+            class="position-relative top-0 start-0 end-0 bottom-0 justify-content-center align-items-center inner-loader min-vh-100"
+          >
+            <div class="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="row gy-4"></div>
+        </div>
+      </section>
+
+      <!-- & ================= contact us section  ==========-->
+      <section id="Contact">
+        <div class="container py-5">
+          <div class="row m-5 gy-4">
+            <div class="col-md-6">
+              <input
+                id="name"
+                class="form-control py-2 mb-2"
+                type="text"
+                placeholder="Enter Your Name"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Special characters and numbers not allowed
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="email"
+                class="form-control py-2 mb-2"
+                type="email"
+                placeholder="Enter Your Email"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Email not valid *exemple@yyy.zzz
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="phone"
+                class="form-control py-2 mb-2"
+                type="text"
+                placeholder="Enter Your Phone"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Enter valid Phone Number
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="age"
+                class="form-control py-2 mb-2"
+                type="number"
+                placeholder="Enter Your Age"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Enter valid age
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="password"
+                class="form-control py-2 mb-2"
+                type="password"
+                placeholder="Enter Your Password"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="repassword"
+                class="form-control py-2 mb-2"
+                type="password"
+                placeholder="Reinter Your Password"
+              />
+              <div class="alert alert-danger d-none" role="alert">
+                Password Dosnt Match
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-outline-danger text-center d-block m-auto disabled submit"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
