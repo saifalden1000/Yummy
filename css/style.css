@@ -125,3 +125,9 @@ i,
     height: 32px;
   }
 }
+
+@media (max-width: 500px) {
+  .row {
+    margin-left: 40px;
+  }
+}
